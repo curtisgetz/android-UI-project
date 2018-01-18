@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.curtisgetz.businessappproject.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/err"
+        android:layout_width="match_parent"
+        android:layout_height="250sp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/printer" />
+
+
+    <TextView
+        android:id="@+id/errtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/err"
+        android:fontFamily="sans-serif"
+        android:paddingLeft="50dp"
+        android:paddingBottom="10dp"
+        android:text="Easy RepRap"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/globe"
+        android:layout_marginTop="5dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="50dp"
+        android:src="@drawable/globe"
+        android:layout_below="@id/errtitle" />
+
+    <TextView
+        android:id="@+id/errurl"
+        android:layout_below="@id/errtitle"
+        android:layout_toRightOf="@id/globe"
+        android:layout_marginLeft="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="www.easyreprap.com" />
+
+
+    <ImageView
+        android:id="@+id/map"
+        android:layout_width="35dp"
+        android:layout_height="35sp"
+        android:src="@drawable/map"
+        android:layout_below="@id/globe"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/street"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3101 Brightside Ave"
+        android:layout_below="@id/errurl"
+        android:textSize="20sp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/map"
+        />
+
+
+    <TextView
+        android:id="@+id/street2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bristol, PA 19007"
+        android:textSize="20sp"
+        android:layout_marginLeft="82dp"
+        android:layout_below="@id/street" />
+
+
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Online retail store for 3D printer kits and parts. Including bearings, springs,hobbed bolts and more..."
+        android:textSize="18sp"
+        android:layout_marginLeft="82dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/street2" />
+
+
+
+</RelativeLayout>
